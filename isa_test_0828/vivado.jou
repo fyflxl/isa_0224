@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Feb 24 10:54:55 2020
+# Process ID: 6976
+# Current directory: D:/isa/isa_test_0828
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13164 D:\isa\isa_test_0828\project_1.xpr
+# Log file: D:/isa/isa_test_0828/vivado.log
+# Journal file: D:/isa/isa_test_0828\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/isa/isa_test_0828/project_1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/isa/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1

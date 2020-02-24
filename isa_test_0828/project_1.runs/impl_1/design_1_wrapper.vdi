@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Feb 24 10:59:22 2020
+# Process ID: 7780
+# Current directory: D:/isa/isa_test_0828/project_1.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: D:/isa/isa_test_0828/project_1.runs/impl_1/design_1_wrapper.vdi
+# Journal file: D:/isa/isa_test_0828/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/isa/isa_controller_0828_timeout/isa_controller_0828_timeout.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/vivadoanzhuang/Vivado/2018.2/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 355.473 ; gain = 50.238
+Command: link_design -top design_1_wrapper -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 119 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/isa/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/isa/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [d:/isa/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [d:/isa/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [d:/isa/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/isa/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/isa/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1241.078 ; gain = 553.879
+Finished Parsing XDC File [d:/isa/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [d:/isa/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [d:/isa/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [d:/isa/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [d:/isa/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [D:/isa/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc]
+Finished Parsing XDC File [D:/isa/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+12 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:56 . Memory (MB): peak = 1241.078 ; gain = 885.605
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net design_1_i/axi_isa_0/inst/axi_isa_1/ap_done has multiple drivers: design_1_i/axi_isa_0/inst/axi_isa_0/isa_rd_data[15]_i_3/O, and design_1_i/axi_isa_0/inst/axi_isa_1/isa_rd_data[15]_i_2/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net design_1_i/axi_isa_0/inst/axi_isa_1/ap_timeout has multiple drivers: design_1_i/axi_isa_0/inst/axi_isa_0/isa_timeout_reg/Q, and design_1_i/axi_isa_0/inst/axi_isa_1/isa_timeout_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net design_1_i/axi_isa_0/inst/axi_isa_1/int_ap_idle_reg has multiple drivers: design_1_i/axi_isa_0/inst/axi_isa_0/int_ap_idle_i_2/O, and design_1_i/axi_isa_0/inst/axi_isa_1/int_ap_idle_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net design_1_i/axi_isa_1/ap_idle has multiple drivers: design_1_i/axi_isa_1/int_ap_idle_reg_i_1/O, and design_1_i/axi_isa_1/int_ap_idle_reg_i_2/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net design_1_i/axi_isa_1/inst/axi_isa_1/ap_done has multiple drivers: design_1_i/axi_isa_1/inst/axi_isa_0/isa_rd_data[15]_i_3/O, and design_1_i/axi_isa_1/inst/axi_isa_1/isa_rd_data[15]_i_2/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net design_1_i/axi_isa_1/inst/axi_isa_1/ap_timeout has multiple drivers: design_1_i/axi_isa_1/inst/axi_isa_0/isa_timeout_reg/Q, and design_1_i/axi_isa_1/inst/axi_isa_1/isa_timeout_reg/Q.
+INFO: [Project 1-461] DRC finished with 6 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1241.078 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+17 Infos, 0 Warnings, 0 Critical Warnings and 7 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 24 11:01:00 2020...

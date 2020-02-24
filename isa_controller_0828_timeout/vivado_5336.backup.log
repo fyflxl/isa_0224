@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Dec 20 15:27:55 2019
+# Process ID: 5336
+# Current directory: D:/更改后sola/sola/sola/isa_controller_0828_timeout
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1256 D:\更改后sola\sola\sola\isa_controller_0828_timeout\isa_controller_0828_timeout.xpr
+# Log file: D:/更改后sola/sola/sola/isa_controller_0828_timeout/vivado.log
+# Journal file: D:/更改后sola/sola/sola/isa_controller_0828_timeout\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/更改后sola/sola/sola/isa_controller_0828_timeout/isa_controller_0828_timeout.xpr
+INFO: [Project 1-313] Project file moved from 'K:/sola/isa_controller_0828_timeout' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/更改后sola/sola/sola/isa_controller_0828_timeout/isa_controller_0828_timeout.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/XILINX/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:30 . Memory (MB): peak = 779.527 ; gain = 89.535
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 15:42:48 2019...

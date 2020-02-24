@@ -1,0 +1,196 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Dec 23 10:31:38 2019
+# Process ID: 3136
+# Current directory: D:/change_sola/sola/sola/isa_test_0828
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10200 D:\change_sola\sola\sola\isa_test_0828\project_1.xpr
+# Log file: D:/change_sola/sola/sola/isa_test_0828/vivado.log
+# Journal file: D:/change_sola/sola/sola/isa_test_0828\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/change_sola/sola/sola/isa_test_0828/project_1.xpr
+update_compile_order -fileset sources_1
+reset_run design_1_processing_system7_0_0_synth_1
+reset_run design_1_xbar_0_synth_1
+reset_run design_1_rst_ps7_0_50M_0_synth_1
+reset_run design_1_axi_isa_0_0_synth_1
+reset_run design_1_axi_isa_1_0_synth_1
+reset_run design_1_xlconcat_0_0_synth_1
+reset_run design_1_auto_pc_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+upgrade_ip [get_ips  {design_1_axi_isa_1_0 design_1_axi_isa_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {design_1_axi_isa_1_0 design_1_axi_isa_0_0}] -no_script -sync -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+set_property synth_checkpoint_mode None [get_files  D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/change_sola/sola/sola/isa_test_0828/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/change_sola/sola/sola/isa_test_0828/project_1.ip_user_files -ipstatic_source_dir D:/change_sola/sola/sola/isa_test_0828/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/change_sola/sola/sola/isa_test_0828/project_1.cache/compile_simlib/modelsim} {questa=D:/change_sola/sola/sola/isa_test_0828/project_1.cache/compile_simlib/questa} {riviera=D:/change_sola/sola/sola/isa_test_0828/project_1.cache/compile_simlib/riviera} {activehdl=D:/change_sola/sola/sola/isa_test_0828/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+set_msg_config -suppress -id {IP_Flow 19-3664} 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+set_property name oe_isa_sd1_c [get_bd_ports oe_isa_sd1_B]
+set_property name oe_isa_sd1_b [get_bd_ports oe_isa_sd1_c]
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+delete_bd_objs [get_bd_nets axi_isa_0_dir_isa_sd1] [get_bd_nets iocs16_0_1] [get_bd_nets irq5_0_1] [get_bd_nets axi_isa_0_irq] [get_bd_nets axi_isa_0_isa_sa] [get_bd_nets axi_isa_0_oe_isa_sd1] [get_bd_nets axi_isa_0_oe_isa_sa1] [get_bd_nets axi_isa_0_oe_isa_in] [get_bd_nets axi_isa_0_dir_isa_sa2] [get_bd_nets axi_isa_0_dir_isa_out] [get_bd_nets axi_isa_0_isa_iow] [get_bd_nets axi_isa_0_isa_sd_out] [get_bd_nets axi_isa_0_dir_isa_sd2] [get_bd_nets axi_isa_0_isa_aen] [get_bd_nets axi_isa_0_isa_rst_drv] [get_bd_nets axi_isa_0_oe_isa_sd2] [get_bd_nets axi_isa_0_oe_isa_sa2] [get_bd_nets axi_isa_0_oe_isa_out] [get_bd_nets axi_isa_0_dir_isa_sa1] [get_bd_nets axi_isa_0_dir_isa_in] [get_bd_nets axi_isa_0_isa_ior] [get_bd_nets isa_sd_in_0_1] [get_bd_nets axi_isa_0_isa_tri_en] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells axi_isa_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:axi_isa:1.0 axi_isa_0
+endgroup
+set_property location {4 1079 306} [get_bd_cells axi_isa_0]
+set_property location {4 1201 339} [get_bd_cells axi_isa_0]
+set_property location {4 1202 328} [get_bd_cells axi_isa_0]
+delete_bd_objs [get_bd_nets axi_isa_1_oe_isa_out] [get_bd_nets clk_wiz_0_clk_out1] [get_bd_nets isa_sd_in_B_1] [get_bd_nets iocs16_B_1] [get_bd_nets axi_isa_1_oe_isa_sd2] [get_bd_nets axi_isa_1_oe_isa_sa2] [get_bd_nets axi_isa_1_dir_isa_sd2] [get_bd_nets axi_isa_1_dir_isa_sa2] [get_bd_nets axi_isa_1_dir_isa_out] [get_bd_nets axi_isa_1_isa_iow] [get_bd_nets axi_isa_1_isa_rst_drv] [get_bd_nets axi_isa_1_isa_sd_out] [get_bd_nets axi_isa_1_irq] [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_nets axi_isa_1_dir_isa_sd1] [get_bd_nets axi_isa_1_oe_isa_sd1] [get_bd_nets irq5_B_1] [get_bd_nets axi_isa_1_oe_isa_sa1] [get_bd_nets axi_isa_1_oe_isa_in] [get_bd_nets axi_isa_1_dir_isa_sa1] [get_bd_nets axi_isa_1_dir_isa_in] [get_bd_nets axi_isa_1_isa_sa] [get_bd_nets axi_isa_1_isa_ior] [get_bd_nets axi_isa_1_isa_aen] [get_bd_nets axi_isa_1_isa_tri_en] [get_bd_cells axi_isa_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:axi_isa:1.0 axi_isa_1
+endgroup
+set_property location {4 1267 827} [get_bd_cells axi_isa_1]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_isa_0/s00_axi} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_isa_0/s00_axi]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_isa_1/s00_axi} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_isa_1/s00_axi]
+endgroup
+connect_bd_net [get_bd_ports oe_isa_sd1] [get_bd_pins axi_isa_0/oe_isa_sd1]
+connect_bd_net [get_bd_ports oe_isa_sd2] [get_bd_pins axi_isa_0/oe_isa_sd2]
+connect_bd_net [get_bd_ports oe_isa_sa1] [get_bd_pins axi_isa_0/oe_isa_sa1]
+connect_bd_net [get_bd_ports oe_isa_sa2] [get_bd_pins axi_isa_0/oe_isa_sa2]
+connect_bd_net [get_bd_ports oe_isa_in] [get_bd_pins axi_isa_0/oe_isa_in]
+connect_bd_net [get_bd_ports oe_isa_out] [get_bd_pins axi_isa_0/oe_isa_out]
+connect_bd_net [get_bd_ports dir_isa_sd1] [get_bd_pins axi_isa_0/dir_isa_sd1]
+connect_bd_net [get_bd_ports dir_isa_sd2] [get_bd_pins axi_isa_0/dir_isa_sd2]
+connect_bd_net [get_bd_ports dir_isa_sa1] [get_bd_pins axi_isa_0/dir_isa_sa1]
+connect_bd_net [get_bd_ports dir_isa_sa2] [get_bd_pins axi_isa_0/dir_isa_sa2]
+connect_bd_net [get_bd_ports dir_isa_in] [get_bd_pins axi_isa_0/dir_isa_in]
+connect_bd_net [get_bd_ports dir_isa_out] [get_bd_pins axi_isa_0/dir_isa_out]
+connect_bd_net [get_bd_ports isa_sa] [get_bd_pins axi_isa_0/isa_iow]
+delete_bd_objs [get_bd_nets axi_isa_0_isa_iow]
+connect_bd_net [get_bd_ports isa_sa] [get_bd_pins axi_isa_0/dir_isa_out]
+delete_bd_objs [get_bd_nets axi_isa_0_dir_isa_out]
+connect_bd_net [get_bd_ports dir_isa_out] [get_bd_pins axi_isa_0/dir_isa_out]
+connect_bd_net [get_bd_ports isa_iow] [get_bd_pins axi_isa_0/isa_iow]
+delete_bd_objs [get_bd_nets axi_isa_0_isa_iow]
+connect_bd_net [get_bd_ports isa_tri_en] [get_bd_pins axi_isa_0/isa_tri_en]
+connect_bd_net [get_bd_ports isa_aen] [get_bd_pins axi_isa_0/isa_aen]
+delete_bd_objs [get_bd_nets axi_isa_0_isa_aen]
+connect_bd_net [get_bd_ports isa_rst_drv] [get_bd_pins axi_isa_0/isa_rst_drv]
+delete_bd_objs [get_bd_ports isa_ior]
+connect_bd_net [get_bd_ports isa_aen] [get_bd_pins axi_isa_0/isa_aen]
+connect_bd_net [get_bd_ports isa_sd_out] [get_bd_pins axi_isa_0/isa_sd_out]
+connect_bd_net [get_bd_ports isa_iow] [get_bd_pins axi_isa_0/isa_iow]
+connect_bd_net [get_bd_ports isa_sa] [get_bd_pins axi_isa_0/isa_sa]
+copy_bd_objs /  [get_bd_ports {isa_ior_B}]
+delete_bd_objs [get_bd_ports isa_ior_B1]
+copy_bd_objs /  [get_bd_ports {isa_ior_B}]
+set_property location {1450 424} [get_bd_ports isa_ior_B1]
+set_property name isa_ior [get_bd_ports isa_ior_B1]
+connect_bd_net [get_bd_ports isa_ior] [get_bd_pins axi_isa_0/isa_ior]
+set_property location {4 1196 870} [get_bd_cells axi_isa_1]
+set_property location {4 1211 818} [get_bd_cells axi_isa_1]
+set_property location {4 1197 819} [get_bd_cells axi_isa_1]
+set_property location {4 1198 821} [get_bd_cells axi_isa_1]
+set_property location {4 1204 824} [get_bd_cells axi_isa_1]
+set_property location {4 1195 834} [get_bd_cells axi_isa_1]
+set_property location {4 1196 872} [get_bd_cells axi_isa_1]
+set_property location {4 1202 876} [get_bd_cells axi_isa_1]
+set_property location {4 1205 857} [get_bd_cells axi_isa_1]
+set_property location {4 1240 1325} [get_bd_cells axi_isa_1]
+set_property location {4 1299 806} [get_bd_cells axi_isa_1]
+set_property location {4 1208 813} [get_bd_cells axi_isa_1]
+set_property location {4 1215 827} [get_bd_cells axi_isa_1]
+set_property location {4 1200 840} [get_bd_cells axi_isa_1]
+connect_bd_net [get_bd_ports oe_isa_sd1_b] [get_bd_pins axi_isa_1/oe_isa_sd1]
+connect_bd_net [get_bd_ports oe_isa_sd2_B] [get_bd_pins axi_isa_1/oe_isa_sd2]
+connect_bd_net [get_bd_ports oe_isa_sa1_B] [get_bd_pins axi_isa_1/oe_isa_sa1]
+connect_bd_net [get_bd_ports oe_isa_sa2_B] [get_bd_pins axi_isa_1/oe_isa_sa2]
+delete_bd_objs [get_bd_nets axi_isa_1_oe_isa_sa2] [get_bd_ports oe_isa_sa2_B]
+undo
+connect_bd_net [get_bd_ports oe_isa_in_B] [get_bd_pins axi_isa_1/oe_isa_in]
+connect_bd_net [get_bd_ports oe_isa_out_B] [get_bd_pins axi_isa_1/oe_isa_out]
+connect_bd_net [get_bd_ports dir_isa_sd1_B] [get_bd_pins axi_isa_1/dir_isa_sd1]
+connect_bd_net [get_bd_ports dir_isa_sd2_B] [get_bd_pins axi_isa_1/dir_isa_sd2]
+connect_bd_net [get_bd_ports dir_isa_sa1_B] [get_bd_pins axi_isa_1/dir_isa_sa1]
+connect_bd_net [get_bd_ports dir_isa_sa2_B] [get_bd_pins axi_isa_1/dir_isa_sa2]
+connect_bd_net [get_bd_ports dir_isa_in_B] [get_bd_pins axi_isa_1/dir_isa_in]
+connect_bd_net [get_bd_ports dir_isa_out_B] [get_bd_pins axi_isa_1/dir_isa_out]
+connect_bd_net [get_bd_ports isa_sa_B] [get_bd_pins axi_isa_1/isa_sa]
+connect_bd_net [get_bd_ports isa_iow_B] [get_bd_pins axi_isa_1/isa_iow]
+connect_bd_net [get_bd_ports isa_ior_B] [get_bd_pins axi_isa_1/isa_ior]
+delete_bd_objs [get_bd_nets axi_isa_1_isa_ior] [get_bd_ports isa_ior_B]
+undo
+connect_bd_net [get_bd_ports isa_rst_drv_B] [get_bd_pins axi_isa_1/isa_rst_drv]
+connect_bd_net [get_bd_ports isa_aen_B] [get_bd_pins axi_isa_1/isa_aen]
+connect_bd_net [get_bd_ports isa_sd_out_B] [get_bd_pins axi_isa_1/isa_sd_out]
+connect_bd_net [get_bd_ports isa_tri_en_B] [get_bd_pins axi_isa_1/isa_tri_en]
+connect_bd_net [get_bd_pins axi_isa_0/irq] [get_bd_pins xlconcat_0/In0]
+connect_bd_net [get_bd_pins axi_isa_1/irq] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins axi_isa_0/clk_16m_i] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins axi_isa_1/clk_16m_i] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_ports iocs16] [get_bd_pins axi_isa_0/iocs16]
+connect_bd_net [get_bd_ports irq5] [get_bd_pins axi_isa_0/irq5]
+connect_bd_net [get_bd_ports isa_sd_in] [get_bd_pins axi_isa_0/isa_sd_in]
+connect_bd_net [get_bd_ports isa_sd_in_B] [get_bd_pins axi_isa_1/isa_sd_in]
+connect_bd_net [get_bd_ports iocs16_B] [get_bd_pins axi_isa_1/iocs16]
+connect_bd_net [get_bd_ports irq5_B] [get_bd_pins axi_isa_1/irq5]
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+get_ports isa_sa_b[0]
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_run synth_1 -name synth_1
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}

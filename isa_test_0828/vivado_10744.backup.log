@@ -1,0 +1,530 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Dec 23 18:25:54 2019
+# Process ID: 10744
+# Current directory: D:/change_sola/sola/sola/isa_test_0828
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7656 D:\change_sola\sola\sola\isa_test_0828\project_1.xpr
+# Log file: D:/change_sola/sola/sola/isa_test_0828/vivado.log
+# Journal file: D:/change_sola/sola/sola/isa_test_0828\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/change_sola/sola/sola/isa_test_0828/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/change_sola/sola/sola/isa_controller_0828_timeout/isa_controller_0828_timeout.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/XILINX/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 837.742 ; gain = 118.957
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:user:axi_isa:1.0 - axi_isa_0
+Adding cell -- xilinx.com:user:axi_isa:1.0 - axi_isa_1
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /axi_isa_0/clk_16m_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /axi_isa_1/clk_16m_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file <D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [Vivado 12-3482] The generated wrapper file has already been imported into the project, the imported file is:
+'D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/imports/hdl/design_1_wrapper.v'
+add_files -norecurse D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/imports/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/imports/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+get_ports isa_sa_b
+ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon Dec 23 18:30:34 2019] Launched synth_1...
+Run output will be captured here: D:/change_sola/sola/sola/isa_test_0828/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 119 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1744.426 ; gain = 528.848
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc]
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[0]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[1]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[2]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[3]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[4]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[5]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[6]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[7]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[8]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[9]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[10]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[11]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[12]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[13]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[14]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[15]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[0]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[1]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[2]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[3]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[4]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[5]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[6]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[7]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[8]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[9]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[10]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[11]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[12]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[13]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[14]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd[15]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port dir_isa_sd2 can not be placed on PACKAGE_PIN D18 because the PACKAGE_PIN is occupied by port dir_isa_sd1 [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:74]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port oe_isa_sd2 can not be placed on PACKAGE_PIN M19 because the PACKAGE_PIN is occupied by port oe_isa_sd1 [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:82]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port oe_isa_sa1 can not be placed on PACKAGE_PIN M19 because the PACKAGE_PIN is occupied by port oe_isa_sd1 [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:83]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port oe_isa_sa2 can not be placed on PACKAGE_PIN M19 because the PACKAGE_PIN is occupied by port oe_isa_sd1 [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[0]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[1]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[2]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[3]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[4]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[5]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[6]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[7]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[8]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[9]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[10]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[11]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[12]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[13]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[14]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[15]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[0]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[1]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[2]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[3]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[4]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[5]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[6]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[7]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[8]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[9]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[10]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[11]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[12]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[13]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[14]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sa_b[15]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[0]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[1]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[2]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[3]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[4]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[5]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[6]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[7]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[8]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[9]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[10]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[11]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[12]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[13]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[14]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[15]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[0]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[1]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[2]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[3]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[4]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[5]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[6]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[7]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[8]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[9]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[10]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[11]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[12]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[13]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[14]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'isa_sd_b[15]'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dir_isa_sd1_b'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dir_isa_sd2_b'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dir_isa_sd1_b'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dir_isa_sd2_b'. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:179]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:179]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:179]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:179]
+Finished Parsing XDC File [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 1758.910 ; gain = 854.855
+get_ports isa_sa_b
+get_ports isa_sa_B
+isa_sa_B[15] isa_sa_B[14] isa_sa_B[13] isa_sa_B[12] isa_sa_B[11] isa_sa_B[10] isa_sa_B[9] isa_sa_B[8] isa_sa_B[7] isa_sa_B[6] isa_sa_B[5] isa_sa_B[4] isa_sa_B[3] isa_sa_B[2] isa_sa_B[1] isa_sa_B[0]
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port dir_isa_sd2 can not be placed on PACKAGE_PIN D18 because the PACKAGE_PIN is occupied by port dir_isa_sd1 [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:74]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port oe_isa_sd2 can not be placed on PACKAGE_PIN M19 because the PACKAGE_PIN is occupied by port oe_isa_sd1 [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:82]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port oe_isa_sa1 can not be placed on PACKAGE_PIN M19 because the PACKAGE_PIN is occupied by port oe_isa_sd1 [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:83]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port oe_isa_sa2 can not be placed on PACKAGE_PIN M19 because the PACKAGE_PIN is occupied by port oe_isa_sd1 [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:84]
+Finished Parsing XDC File [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1939.656 ; gain = 86.039
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Dec 23 18:40:28 2019] Launched synth_1...
+Run output will be captured here: D:/change_sola/sola/sola/isa_test_0828/project_1.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 119 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port dir_isa_sd2 can not be placed on PACKAGE_PIN D18 because the PACKAGE_PIN is occupied by port dir_isa_sd1 [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:74]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port oe_isa_sd2 can not be placed on PACKAGE_PIN M19 because the PACKAGE_PIN is occupied by port oe_isa_sd1 [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:82]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port oe_isa_sa1 can not be placed on PACKAGE_PIN M19 because the PACKAGE_PIN is occupied by port oe_isa_sd1 [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:83]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port oe_isa_sa2 can not be placed on PACKAGE_PIN M19 because the PACKAGE_PIN is occupied by port oe_isa_sd1 [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:84]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port dir_isa_sd2_B can not be placed on PACKAGE_PIN T20 because the PACKAGE_PIN is occupied by port dir_isa_sd1_B [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:179]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port oe_isa_sa1_B can not be placed on PACKAGE_PIN U20 because the PACKAGE_PIN is occupied by port oe_isa_sd2_B [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:188]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port oe_isa_sa2_B can not be placed on PACKAGE_PIN U20 because the PACKAGE_PIN is occupied by port oe_isa_sd2_B [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc:189]
+Finished Parsing XDC File [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1974.582 ; gain = 34.926
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [d:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc]
+Finished Parsing XDC File [D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/constrs_1/imports/Desktop/isa.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1979.605 ; gain = 5.023
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Dec 23 19:33:09 2019] Launched synth_1...
+Run output will be captured here: D:/change_sola/sola/sola/isa_test_0828/project_1.runs/synth_1/runme.log
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/change_sola/sola/sola/isa_controller_0828_timeout/isa_controller_0828_timeout.srcs'.
+report_ip_status -name ip_status
+reset_run synth_1
+upgrade_ip [get_ips  {design_1_axi_isa_0_1 design_1_axi_isa_1_1}] -log ip_upgrade.log
+Upgrading 'D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_axi_isa_0_1 from axi_isa_v1_0 1.0 to axi_isa_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /axi_isa_0_upgraded_ipi/clk_16m_i(undef)
+INFO: [IP_Flow 19-1972] Upgraded design_1_axi_isa_1_1 from axi_isa_v1_0 1.0 to axi_isa_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /axi_isa_1_upgraded_ipi/clk_16m_i(undef)
+Wrote  : <D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/change_sola/sola/sola/isa_test_0828/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {design_1_axi_isa_0_1 design_1_axi_isa_1_1}] -no_script -sync -force -quiet
+generate_target all [get_files  D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_isa_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_isa_1 .
+WARNING: [IP_Flow 19-3452] Invalid long/float value '5e+07' specified for parameter 'FREQ_HZ(CLK)' for design_1_auto_pc_0.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/change_sola/sola/sola/isa_test_0828/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/change_sola/sola/sola/isa_test_0828/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/change_sola/sola/sola/isa_test_0828/project_1.ip_user_files -ipstatic_source_dir D:/change_sola/sola/sola/isa_test_0828/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/change_sola/sola/sola/isa_test_0828/project_1.cache/compile_simlib/modelsim} {questa=D:/change_sola/sola/sola/isa_test_0828/project_1.cache/compile_simlib/questa} {riviera=D:/change_sola/sola/sola/isa_test_0828/project_1.cache/compile_simlib/riviera} {activehdl=D:/change_sola/sola/sola/isa_test_0828/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 4
+[Mon Dec 23 19:41:36 2019] Launched synth_1...
+Run output will be captured here: D:/change_sola/sola/sola/isa_test_0828/project_1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Dec 23 19:44:12 2019] Launched synth_1...
+Run output will be captured here: D:/change_sola/sola/sola/isa_test_0828/project_1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Dec 23 19:44:43 2019] Launched synth_1...
+Run output will be captured here: D:/change_sola/sola/sola/isa_test_0828/project_1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Dec 23 19:48:55 2019] Launched synth_1...
+Run output will be captured here: D:/change_sola/sola/sola/isa_test_0828/project_1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Dec 23 19:52:25 2019] Launched synth_1...
+Run output will be captured here: D:/change_sola/sola/sola/isa_test_0828/project_1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Dec 23 19:57:17 2019] Launched synth_1...
+Run output will be captured here: D:/change_sola/sola/sola/isa_test_0828/project_1.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 24 11:04:00 2019...
